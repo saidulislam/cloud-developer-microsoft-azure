@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "python"
+  },
+  "ConnectionStrings": {
+    "AzureCosmosDBConnectionString": "mongodb://si-cosmo-db-1:PDJ9f9uGWdRJK7RToYtbel9lQ302G5bK3ahw2kTxA0vectkKXkCPBRExARvbkEMkblNwpSmP4QUycKSKofo3vQ==@si-cosmo-db-1.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@si-cosmo-db-1@"
+  }
+}
