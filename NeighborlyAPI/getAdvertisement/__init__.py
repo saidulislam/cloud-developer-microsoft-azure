@@ -7,7 +7,7 @@ import json
 from bson.json_util import dumps
 from bson.objectid import ObjectId
 
-# example api call http://localhost:7071/api/getAdvertisement/?id=<some id>
+# to test the call http://localhost:7071/api/getAdvertisement/?id=<some id>
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger getAdvertisement function processed a request.')
 
