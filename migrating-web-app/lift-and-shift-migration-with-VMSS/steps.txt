@@ -1,0 +1,26 @@
+Exercise: Lift and Shift Migration with Virtual Machine Scale Sets (VMSS)
+Create a Virtual Machine Scale using Cloud-init to bootstrap a hello world app. As we learned, creating custom images is the recommended path to deploy applications in VM scale set in a production environment. However, the purpose of this exercise is to have a hands-on experience with all the services required to create a Virtual Machine scale set.
+
+1. Download the cloud-init.txt file here
+
+2. Create a resource group with the following settings:
+name: scaleset-xxx-rg (replace xxx with random numbers)
+location: closest region to you
+
+3. Create a virtual machine scale set with the following requirements:
+name: scaleset-xxx (xxx here should match the numbers used in your resource group for organization purposes)
+image: UbuntuLTS
+VM Size: costing less than $10 or sku: Standard_B1ls if pricing details is not available in your region
+OS Disk Type: Premium SSD
+Load Balancer Type: Azure Load Balancer
+Admin username: azureuser
+Custom-data: Use the content in cloud-init.text
+
+4. Update the Azure load balancer with rule to allow web traffic on port 80 for both backend and frontend
+
+5. Find the IP Address and visit the address using your web browser to verify your scale set is configured
+
+6. Cleanup and delete resources
+Be sure to clean up and delete resources to avoid recurring charges
+Supporting Materials
+ Starter-Files
